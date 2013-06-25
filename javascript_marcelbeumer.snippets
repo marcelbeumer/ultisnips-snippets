@@ -94,7 +94,7 @@ endsnippet
 # Snippets for Console Debug Output
 
 snippet cl "console.log"
-console.log(${1:"${2:value}"});
+console.log(${1:'${2:value}'});
 endsnippet
 
 snippet cd "console.dir"
@@ -102,31 +102,31 @@ console.dir(${1:object});
 endsnippet
 
 snippet cw "console.warn"
-console.warn(${1:"${2:value}"});
+console.warn(${1:'${2:value}'});
 endsnippet
 
 snippet ce "console.error"
-console.error(${1:"${2:value}"});
+console.error(${1:'${2:value}'});
 endsnippet
 
 snippet ca "console.assert"
-console.assert(${1:assertion}, ${2:"${3:message}"});
+console.assert(${1:assertion}, ${2:'${3:message}'});
 endsnippet
 
 snippet cgroup "console.group"
-console.group("${1:label}");
+console.group('${1:label}');
 ${VISUAL}$0
 console.groupEnd();
 endsnippet
 
 snippet ctime "console.time"
-console.time("${1:label}");
+console.time('${1:label}');
 ${VISUAL}$0
-console.timeEnd("$1");
+console.timeEnd('$1');
 endsnippet
 
 snippet ctimestamp "console.timestamp"
-console.timeStamp("${1:label}")
+console.timeStamp('${1:label}')
 endsnippet
 
 snippet ctrace "console.trace"
